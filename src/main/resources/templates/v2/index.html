@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+ 
+ <head th:include="v2/base/head ::common_header"></head>
+
+ <body>
+ <script src="v2/js/index.js"></script>
+ <script src="v2/js/canvas-nest.js"></script>
+<!--top begin-->
+		<div th:include="v2/base/top :: top"></div>
+<!--top end-->
+ <script  >
+ document.title ='首页-隔壁的顺顺郭';
+ </script>
+<article> 
+  <!--lbox begin-->
+  <div class="lbox"> 
+    <!--banbox begin-->
+    <div class="banbox">
+      <div class="banner">
+        <div id="banner" class="fader">
+          <li class="slide" ><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></li>
+          <li class="slide" ><a href="/" target="_blank"><img src="v2/images/2.jpg"/></a></li>
+          <li class="slide" ><a href="/" target="_blank"><img src="v2/images/3.jpg"/></a></li>
+          <li class="slide" ><a href="/" target="_blank"><img src="v2/images/4.jpg"/></a></li>
+          <div class="fader_controls">
+            <div class="page prev" data-target="prev"></div>
+            <div class="page next" data-target="next"></div>
+            <ul class="pager_list">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--banbox end--> 
+    <!--headline begin-->
+    <div class="headline">
+      <ul>
+        <li><a href="/article_dt/36"  target="_blank" title="个人博客网站开发-域名备案流程"><img src="v2/images/h1.jpg" alt="个人博客网站开发-域名备案流程"/><span>个人博客网站开发-域名备案流程</span></a></li>
+        <li><a href="/article_dt/33"  target="_blank"  title="资料网站合集(持续更新中...)"><img src="v2/images/h2.jpg" alt="资料网站合集(持续更新中...)"/><span>资料网站合集(持续更新中...)</span></a></li>
+      </ul>
+    </div>
+    <!--headline end-->
+    <div class="clearblank"></div>
+    
+         <div class="whitebg bloglist">
+           <h2 class="htitle"><span class="hnav"><a href="/list?page=1&amp;limit=10" target="_blank">更多</a></span>最新文章</h2>
+      <ul id="ul_latest_article">
+       
+      </ul>
+    </div>
+    <!--bloglist end--> 
+    <div class="tab_box whitebg">
+      <div class="tab_buttons">
+        <ul id="ul_article_types">
+        </ul>
+        <h2 class="htitle">
+       <span class="hnav"><a id="article_more" href="/list" target="_blank">更多</a></span> 
+       </h2>
+      </div>
+      <div id="dv_article_types" class="newstab">
+      </div>
+    </div>
+    <!--tab_box end-->
+    <!-- <div class="zhuanti whitebg">
+      <h2 class="htitle"><span class="hnav"><a href="/life" target="_blank">我的生活</a><a href="/about" target="_blank">关于我</a></span>杂七杂八</h2>
+      <ul>
+        <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>xxxxxx</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+                 <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>XXXXXX</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+                          <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>XXXXXX</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+                          <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>XXXXXX</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+                          <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>XXXXXX</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+                          <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>XXXXXX</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+                          <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>XXXXXX</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+                          <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>XXXXXX</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+                          <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>XXXXXX</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+                          <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>XXXXXX</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+                          <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>XXXXXX</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+                          <li> <i class="ztpic"><a href="/" target="_blank"><img src="v2/images/1.jpg"/></a></i> <b>XXXXXX</b><span>xxxxxxxxxxxxxxxxxxx</span><a href="" target="_blank" class="readmore">文章阅读</a> </li>
+         
+          </ul>
+    </div> -->
+
+  </div>
+  <div class="rbox">
+  		<div th:include="v2/base/business_card :: business_card"></div>
+<!--     <div class="whitebg notice">
+      <h2 class="htitle">网站公告</h2>
+      <ul>
+        <li><a href="/">十条设计原则教你学会如何设计网页布局!</a></li>
+        <li><a href="/">用js+css3来写一个手机栏目导航</a></li>
+        <li><a href="/">6条网页设计配色原则,让你秒变配色高手</a></li>
+        <li><a href="/">三步实现滚动条触动css动画效果</a></li>
+      </ul>
+    </div> -->
+     <div  th:include="v2/base/click_rank :: click_rank" >
+    </div>
+ 
+    <div  th:include="v2/base/site_information :: site_information" >
+    </div>
+    <div  th:include="v2/base/links :: links" >
+    </div>
+<!--	<audio class="bgmusic" controls="controls"   autoplay="none">-->
+<!-- 		 <source src="http://47.111.1.180/images/audio/bg_music.mp3" type="audio/mp3" />-->
+<!-- 	</audio>-->
+  </div>
+</article>
+	<!--footer start-->
+	<div th:replace="v2/base/bottom :: bottom"></div>
+	<!--footer end-->
+</body>
+</html>

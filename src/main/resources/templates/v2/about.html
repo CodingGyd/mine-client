@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+ <head th:include="v2/base/head ::common_header"></head>
+
+<body>
+<!--top begin-->
+		<div th:include="v2/base/top :: top"></div>
+<!--top end-->
+ <script src="v2/js/canvas-nest.js"></script>
+ <script  >
+ document.title ='关于我-隔壁的顺顺郭';
+ </script>
+<article>
+  <div class="whitebg about">
+    <div class="ab_box"> <i class="avatar_pic"><img src="v2/images/avatar.png"/></i>
+      <h3>隔壁的顺顺郭</h3>
+      <p>主业java后台开发</p>
+      <p>一只无名小卒。</p>
+    </div>
+    <h2 class="gd_title">我的博客</h2>
+    <ul class="myblog">
+      <li><b>创建时间</b>
+        <p>2018年01月12日</p>
+        <p><a href="/" target="_blank" class="buttons">主页</a></p>
+      </li>
+    </ul>
+    <h2 class="gd_title">找到我</h2>
+    <ul class="qq_join">
+      <li>
+        <section><img src="v2/images/qq1.png"/>
+          <p>JAVA技术交流群①</p>
+          <p>QQ群号：983610718</p>
+        </section>
+      </li>
+       <li>
+        <section><img src="v2/images/wx.jpeg"/>
+          <p>关注我的<b>微信</b></p>
+          <p>微信号：CodingAndroid</p>
+        </section>
+      </li>
+    </ul>
+  </div>
+</article>
+	<!--footer start-->
+	<div th:replace="v2/base/bottom :: bottom"></div>
+	<!--footer end-->
+</body>
+</html>
